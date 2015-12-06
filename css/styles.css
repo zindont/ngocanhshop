@@ -1,0 +1,408 @@
+/* Table of content
+-----------------------------------------------
+1. Global
+2. Buttons
+3. Navigation
+4. Header
+5. Footer
+6. Content
+*/
+
+/* =Global
+----------------------------------------------- */
+body {
+  color: #6B6B6B;
+  word-wrap: break-word;
+  line-height: 1.7;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+a {
+  color: #1FA67A;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #666666;
+}
+
+h1,
+.h1 {
+  font-size: 32px;
+}
+
+h2,
+.h2 {
+  font-size: 28px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+}
+
+h6,
+.h6 {
+  font-size: 14px;
+}
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* Corrects font size not being inherited in all browsers */
+  margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+select {
+    width: 250px;
+    border: 1px solid #DCE4EC;
+    background-color: #FFF;
+    height: 30px;
+    padding: 5px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing:    content-box;
+  box-sizing:         content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #B2A8A6;
+  border-radius: 3px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px 15px;
+}
+textarea {
+  overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top; /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+
+.color-red{
+  color: red !important;
+}
+/* =Buttons
+----------------------------------------------- */
+.btn-default, .label-default {
+  background-color: #E97926;
+  border-color: #E97926;
+}
+.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
+  background-color: #FEB500;
+  border-color: #FEB500;
+}
+.btn.btn-default {
+    color: #FFF;
+}
+
+/* =Navigation
+----------------------------------------------- */
+.navbar-default{
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 10;
+}
+#navbar{
+  margin-top: 80px;
+}
+#navbar > div{
+  height: 70px;
+}
+#navbar > div ul li a{
+  line-height: 1;
+  margin-top: 35px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 5px;
+  border-right: 1px solid;
+}
+#navbar > div ul.navbar-nav li:last-child a{
+  border-right: 0;
+}
+#navbar .logo{
+  padding: 0;
+}
+#navbar .logo img{
+  margin-top: -70px;
+}
+/* =Header
+----------------------------------------------- */
+#header .top-bar{
+  background-color: #000;
+  color: #FFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#header .top-bar div{
+  line-height: 50px;
+}
+#header .top-bar .search input{
+  line-height: 1;
+  background-color: transparent;
+  border: 0;
+  color: #FFF;
+  outline: none;
+}
+#header .top-bar .search button{
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+/* =Banner Slider
+----------------------------------------------- */
+#banner{
+  margin-top: 50px;
+}
+#banner .slider img{
+  width: 100%;
+}
+.rsMinW .rsBullets{
+  left: 0;
+  width: 100%;
+}
+.rsMinW .rsBullet,
+.rsMinW .rsBullet span{
+  width: 8px !important;
+  height: 8px !important;
+  padding: 0 !important;
+  margin: 2px 3px;
+}
+/* =Searchbox
+
+/* =Footer
+----------------------------------------------- */
+#footer{
+  background-color: #CC3323;
+  padding: 15px 0 0; 
+}
+#footer a{
+  color: #FFF;
+}
+#footer .logo{
+  padding: 20px 0;
+}
+#footer .about,
+#footer .copyright{
+  color: #FFF;
+  margin: 0;
+}
+#footer .about > div{
+  padding-right: 80px;
+}
+#footer .about > div hr{
+  margin: 10px 0;
+}
+#footer .about > div ul{
+  padding: 0;
+  list-style: none;
+}
+#footer .about > div ul li{
+  padding: 5px 0;
+}
+#footer .about > div ul li a{
+  margin-left: 15px;
+  color: #FFF;
+}
+#footer .about .fa{
+  display: block;
+}
+#footer .about > div.support ul li:before{
+  content: '\2022';
+  font-size: 20px;
+  position: absolute;
+  line-height: 1;
+}
+#footer .about > div.support-online ul li{
+  margin-bottom: 10px;
+}
+#footer .about .support-online .fa:before{
+  font-size: 20px;
+  padding: 5px;
+  background-color: #FFF;
+  color: #CC3333;
+  border-radius: 50%;
+}
+#footer .about .links ul li a{
+  margin-left: 0
+}
+#footer .copyright ul{
+  padding: 0;
+  list-style: none;
+}
+#footer .copyright ul li{
+  display: inline-block;
+  border-right: 1px solid;
+  line-height: 1;
+}
+#footer .copyright ul li:last-child{
+  border-right: 0;
+}
+#footer .copyright ul li a{
+  padding: 0 5px;
+}
+/* =Content
+----------------------------------------------- */
+#content .container > .row {
+  margin: 0;
+  padding: 15px 0;
+}
+#content .container > .row > div{
+  padding: 15px;
+}
+#content img{
+  width: 100%;
+}
+/*Begin Social*/
+#social-bar{
+  background-color: #EEE;
+}
+#social-bar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#social-bar ul li{
+  display: inline-block;
+  padding: 25px 5px;
+}
+#social-bar ul li a{
+  background-color: #333;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  color: #FFF;
+}
+#social-bar ul li a:hover{
+  background-color: #CC3333;
+}
+/*End Social*/
+
+/*Begin Social*/
+#info-bar{
+  background-color: #D8D8D8;
+  padding: 20px 0;
+}
+#info-bar h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+}
+#info-bar p{
+  text-align: justify;
+}
+/*End Social*/
+/* =Responsive
+----------------------------------------------- */
+/*Max-Width*/
+@media (max-width: 1199px) {
+  .navbar-default{
+    margin-top: 40px;
+  }
+  #navbar .logo img{
+    margin-top: 0;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-default.desktop{
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 649px) {
+ 
+}
+@media (max-width: 599px) {
+ 
+}
+@media (max-width: 479px) {
+
+}
+@media (max-width: 360px) {
+
+}
+/*Min-Width*/
+@media (min-width: 980px) {
+ 
+}
+@media (min-width: 992px) {
+ 
+}
+@media (min-width: 1200px) {
+ 
+}
+
+
+
+ 
