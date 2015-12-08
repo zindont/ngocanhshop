@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #1FA67A;
+  color: #6B6B6B;
   text-decoration: none;
   -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
@@ -146,15 +146,46 @@ textarea {
 .color-red{
   color: red !important;
 }
+.shopnow:before{
+  content: 'SHOP NOW';
+  border: 1px solid;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;   
+}
+.shopnow.dark:before{
+  color: #333;
+  border-color: #333;
+}
+.shopnow.dark:hover:before{
+  background-color: #333;
+  border-color: #333;
+  color: #FFF;
+}
+.shopnow.white:before{
+  color: #FFF;
+  border-color: #FFF;
+}
+.shopnow.white:hover:before{
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #333;
+}
 /* =Buttons
 ----------------------------------------------- */
 .btn-default, .label-default {
-  background-color: #E97926;
-  border-color: #E97926;
+  background-color: #f38526;
+  border-color: #f2770e;
 }
 .btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
-  background-color: #FEB500;
-  border-color: #FEB500;
+  background-color: #f2770e !important;
+  border-color: #f2770e !important;
+  outline: none !important;
 }
 .btn.btn-default {
     color: #FFF;
@@ -178,7 +209,7 @@ textarea {
   border: 0;
 }
 #navbar{
-  margin-top: 80px;
+  margin-top: 55px;
 }
 #navbar > div{
   height: 70px;
@@ -204,6 +235,7 @@ textarea {
 }
 #navbar .logo{
   padding: 0;
+  height: auto;
 }
 #navbar .logo img{
   margin-top: -70px;
@@ -276,8 +308,23 @@ textarea {
   padding: 0 !important;
   margin: 2px 3px;
 }
-#banner .royalSlider{
-  /*height: 500px;*/
+.slider .banner-text{
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+.slider .banner-text h2{
+  font-size: 5vw;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+}
+.slider .banner-text h3{
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 10px;
+  font-size: 2vw;
 }
 /* =Searchbox
 
@@ -364,6 +411,21 @@ textarea {
 #content img{
   width: 100%;
 }
+#content .cate-desc{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  margin: 0 -15px;
+  padding: 0 15%;
+}
+#content .cate-desc h2{
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-shadow: #666 1px 1px 0px;
+}
 /*Begin Social*/
 #social-bar{
   background-color: #EEE;
@@ -416,6 +478,116 @@ textarea {
   border-color: #CC3333;
 }
 /*End info*/
+/* =Product Grid
+----------------------------------------------- */
+#product-grid .item:hover .image img{
+  transform: scale(1.2);
+}
+#product-grid .product-info{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+#product-grid .panel .image{
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+#product-grid .panel .image img{
+  height: 100%;
+  width: auto;
+  transform: translateZ(0px);
+  transition-duration: 500ms;
+  transition-property: transform;
+}
+#product-grid .product-info .product-name,
+#product-grid .product-info .price-box{
+  padding: 0;
+  color: #000;
+}
+#product-grid .product-info .price-box .regular-price{
+  text-transform: lowercase;
+}
+#product-grid .item:hover .buy-panel{
+  display: block;
+}
+#product-grid .buy-panel .form-header{
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+#product-grid .buy-panel{
+  display: none;
+  position: absolute;
+  background-color: #333;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  /*bottom: px;*/
+}
+#product-grid .buy-panel .inner{
+  padding: 10px 0;
+}
+#product-grid .buy-panel .size-qty .row{
+  margin: 0;
+  padding: 0 15px;
+}
+#product-grid .buy-panel .size-qty .product-option select,
+#product-grid .buy-panel .size-qty .product-option input{
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+#product-grid .buy-panel .size-qty .product-option input{
+  font-weight: bold;
+  color: #FFF;
+  background-color: transparent;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+  height: 30px;
+}
+#product-grid .buy-panel .size-qty .product-option > div:first-child{
+  border-right: 1px solid;
+}
+#product-grid .buy-panel .size-qty .qty-container,
+#product-grid .buy-panel .size-qty .qty-container > div{
+  padding: 0;
+}
+#product-grid .buy-panel .qty-modifier{
+
+}
+#product-grid .buy-panel .qty-modifier span{
+  height: 30px;
+  display: block;
+  background-color: #eee;
+  margin: 0 1px;
+  border-radius: 2px;
+}
+#product-grid .buy-panel .qty-modifier span:hover{
+  color: #000;
+  cursor: pointer;
+  background-color: #FFF;
+}
+#product-grid .buy-panel .qty-modifier span:active{
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
+}
+#product-grid .buy-panel .qty-modifier .fa:before{
+  vertical-align: sub;
+}
+#product-grid .buy-panel .size-qty .add-to-cart{
+  margin-top: 10px;
+}
+#product-grid .buy-panel .size-qty .add-to-cart .btn{
+  width: 100%;
+}
+#product-grid .quick-buy.mobile{
+  display: none;
+}
+
 /* =Responsive
 ----------------------------------------------- */
 /*Max-Width*/
@@ -434,6 +606,7 @@ textarea {
   #navbar{
     margin-top: 0;
     background-color: #FFF;
+    border-bottom: 3px solid #000;
   }
   #navbar > div{
     height: auto;
@@ -485,14 +658,25 @@ textarea {
  
 }
 @media (max-width: 479px) {
-
+  #product-grid .item{
+    width: 100%;
+  }
 }
-@media (max-width: 360px) {
+@media (max-width: 320px) {
 
 }
 /*Min-Width*/
-@media (min-width: 980px) {
- 
+@media (min-width: 320px) {
+  #product-grid .buy-panel{
+    display: block;
+    position: relative;
+  }
+}
+@media (min-width: 992px) {
+  #product-grid .buy-panel{
+    display: none;
+    position: absolute;
+  }
 }
 @media (min-width: 992px) {
   #navbar{
@@ -500,7 +684,9 @@ textarea {
   }
 }
 @media (min-width: 1200px) {
- 
+  #product-grid .item{
+    width: 20%;
+  }
 }
 
 

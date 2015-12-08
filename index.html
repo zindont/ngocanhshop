@@ -7,10 +7,12 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>		
 	<script src="js/scripts.js"></script>
 	<!-- OWL -->
 	<script src="js/owl.carousel.min.js"></script>
@@ -102,6 +104,12 @@
 			    <div class="rsContent">
 			        <img alt="" class="rsImg" src=
 			        "img/banner.jpg">
+			        <div class="wow flipInX banner-text">
+			        	<h2>Happy <br>Holliday!</h2>
+			        	<h3>GIVE HAPPINESS</h3>
+			        	<br>
+			        	<a href="#" class="shopnow dark"></a>
+			        </div>
 			    </div>
 			    <div class="rsContent">
 			        <img alt="" class="rsImg" src=
@@ -119,26 +127,61 @@
 			<div class="row">
 				<div class=" col-sm-4">
 					<img src="img/tat-nam.jpg" alt="">
+			        <div class="wow bounceIn cate-desc">
+			        	<h2>Tất nam</h2>
+			        	<br>
+			        	<a href="#" class="shopnow white"></a>
+			        </div>					
 				</div>
 				<div class=" col-sm-4">
 					<img src="img/tat-nu.jpg" alt="">
+			        <div class="wow bounceIn cate-desc">
+			        	<h2>Tất nữ</h2>
+			        	<br>
+			        	<a href="#" class="shopnow white"></a>
+			        </div>					
 				</div>
 				<div class=" col-sm-4">
 					<img src="img/tat-tre-em.jpg" alt="">
+			        <div class="wow bounceIn cate-desc">
+			        	<h2>Tất trẻ em</h2>
+			        	<br>
+			        	<a href="#" class="shopnow white"></a>
+			        </div>					
 				</div>						
 
 				<div class="col-sm-8">
 					<img src="img/do-lot.jpg" alt="">
+			        <div class="wow bounceIn cate-desc">
+			        	<h2>Đồ lót</h2>
+			        	<br>
+			        	<a href="#" class="shopnow white"></a>
+			        </div>					
 				</div>
 				<div class="col-sm-4">
 					<img src="img/khuyen-mai.jpg" alt="">
+			        <div class="wow bounceIn cate-desc">
+			        	<h2>Khuyến mãi</h2>
+			        	<br>
+			        	<a href="#" class="shopnow white"></a>
+			        </div>					
 				</div>						
 
 				<div class="col-sm-6">
 					<img src="img/san-pham-moi.jpg" alt="">
+			        <div class="wow bounceIn cate-desc">
+			        	<h2>sản phẩm mới</h2>
+			        	<br>
+			        	<a href="#" class="shopnow white"></a>
+			        </div>					
 				</div>
 				<div class="col-sm-6">
 					<img src="img/tui-xach-phu-kien.jpg" alt="">
+			        <div class="wow bounceIn cate-desc">
+			        	<h2>Túi xách phụ kiện</h2>
+			        	<br>
+			        	<a href="#" class="shopnow white"></a>
+			        </div>					
 				</div>						
 			</div>				
 		</div>
@@ -256,7 +299,7 @@
 	<script>
       	function setRoyalSliderHeight()
         {
-            var height = parseInt(jQuery(window).height() - jQuery(window).height() / 2);
+            var height = parseInt(jQuery(window).height() - jQuery(window).height() / 3);
             console.log(height);
             jQuery('#full-width-slider').css("height", height + "px");
         }
@@ -270,7 +313,7 @@
 				slidesSpacing: 0,
 				numImagesToPreload: 1,
 				transitionSpeed: 300,
-				navigateByClick: true,
+				navigateByClick: false,
 				sliderDrag: true,
 				transitionType: 'move',
 				loop: 'true',
