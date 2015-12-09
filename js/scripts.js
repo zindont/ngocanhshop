@@ -16,6 +16,13 @@ $(document).ready(function() {
 	    	el.removeClass('scrollDown');
 
 	})
+	$('.navbar-default').hover(function(){
+		if ($(window).scrollTop() < $(this).outerHeight())
+			$(this).addClass('scrollDown');
+	},function(){
+		if ($(window).scrollTop() < $(this).outerHeight())
+			$(this).removeClass('scrollDown');
+	});
 
 	//Adjust qty
 	$('.qty-modifier span').on('click', function(){

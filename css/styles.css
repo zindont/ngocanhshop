@@ -146,6 +146,9 @@ textarea {
 .color-red{
   color: red !important;
 }
+.shopnow{
+  background: transparent !important;
+}
 .shopnow:before{
   content: 'SHOP NOW';
   border: 1px solid;
@@ -176,6 +179,213 @@ textarea {
   border-color: #FFF;
   color: #333;
 }
+/* =Background Color
+----------------------------------------------- */
+.spacegrey {
+    background-color: #eff0ef
+}
+
+.green {
+    background-color: #ddefe5
+}
+
+.yellow {
+    background-color: #fcf4be
+}
+
+.orange {
+    background-color: #fce1b8
+}
+
+.lightorange {
+    background-color: #fdecd3
+}
+
+.pink {
+    background-color: #f3dee7
+}
+
+.pinkpurple {
+    background-color: #e8d9ea
+}
+
+.purple {
+    background-color: #e0dced
+}
+
+.darkred {
+    background-color: #fbb9b3
+}
+
+.lightred {
+    background-color: #f4d0cc
+}
+
+.turqoise {
+    background-color: #d8eff3
+}
+
+.blue {
+    background-color: #a9d1ee
+}
+
+.lightblue {
+    background-color: #bbdaf1
+}
+
+.white {
+    background-color: #fff
+}
+
+.transparent {
+    background-color: transparent
+}
+
+.black {
+    background-color: #1c1e1b
+}
+
+.grey {
+    background-color: #373737
+}
+
+.angle-gradient.spacegrey {
+    background: #eff0ef;
+    background: -moz-linear-gradient(-45deg, #f1f1f1 0%, #eff0ef 30%, #eff0ef 70%, #ebebeb 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #f1f1f1), color-stop(30%, #eff0ef), color-stop(70%, #eff0ef), color-stop(100%, #ebebeb));
+    background: -webkit-linear-gradient(-45deg, #f1f1f1 0%, #eff0ef 30%, #eff0ef 70%, #ebebeb 100%);
+    background: -o-linear-gradient(-45deg, #f1f1f1 0%, #eff0ef 30%, #eff0ef 70%, #ebebeb 100%);
+    background: -ms-linear-gradient(-45deg, #f1f1f1 0%, #eff0ef 30%, #eff0ef 70%, #ebebeb 100%);
+    background: linear-gradient(135deg, #f1f1f1 0%, #eff0ef 30%, #eff0ef 70%, #ebebeb 100%)
+}
+
+.angle-gradient.green {
+    background: #ddefe5;
+    background: -moz-linear-gradient(-45deg, #e4f2ea 0%, #ddefe5 30%, #ddefe5 70%, #d6ece0 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #e4f2ea), color-stop(30%, #ddefe5), color-stop(70%, #ddefe5), color-stop(100%, #d6ece0));
+    background: -webkit-linear-gradient(-45deg, #e4f2ea 0%, #ddefe5 30%, #ddefe5 70%, #d6ece0 100%);
+    background: -o-linear-gradient(-45deg, #e4f2ea 0%, #ddefe5 30%, #ddefe5 70%, #d6ece0 100%);
+    background: -ms-linear-gradient(-45deg, #e4f2ea 0%, #ddefe5 30%, #ddefe5 70%, #d6ece0 100%);
+    background: linear-gradient(135deg, #e4f2ea 0%, #ddefe5 30%, #ddefe5 70%, #d6ece0 100%)
+}
+
+.angle-gradient.yellow {
+    background: #fcf4be;
+    background: -moz-linear-gradient(-45deg, #fdf6cb 0%, #fcf4be 30%, #fcf4be 70%, #fbf2b1 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fdf6cb), color-stop(30%, #fcf4be), color-stop(70%, #fcf4be), color-stop(100%, #fbf2b1));
+    background: -webkit-linear-gradient(-45deg, #fdf6cb 0%, #fcf4be 30%, #fcf4be 70%, #fbf2b1 100%);
+    background: -o-linear-gradient(-45deg, #fdf6cb 0%, #fcf4be 30%, #fcf4be 70%, #fbf2b1 100%);
+    background: -ms-linear-gradient(-45deg, #fdf6cb 0%, #fcf4be 30%, #fcf4be 70%, #fbf2b1 100%);
+    background: linear-gradient(135deg, #fdf6cb 0%, #fcf4be 30%, #fcf4be 70%, #fbf2b1 100%)
+}
+
+.angle-gradient.orange {
+    background: #fce1b8;
+    background: -moz-linear-gradient(-45deg, #fde7c6 0%, #fce1b8 30%, #fce1b8 70%, #fbdbaa 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fde7c6), color-stop(30%, #fce1b8), color-stop(70%, #fce1b8), color-stop(100%, #fbdbaa));
+    background: -webkit-linear-gradient(-45deg, #fde7c6 0%, #fce1b8 30%, #fce1b8 70%, #fbdbaa 100%);
+    background: -o-linear-gradient(-45deg, #fde7c6 0%, #fce1b8 30%, #fce1b8 70%, #fbdbaa 100%);
+    background: -ms-linear-gradient(-45deg, #fde7c6 0%, #fce1b8 30%, #fce1b8 70%, #fbdbaa 100%);
+    background: linear-gradient(135deg, #fde7c6 0%, #fce1b8 30%, #fce1b8 70%, #fbdbaa 100%)
+}
+
+.angle-gradient.lightorange {
+    background: #fdecd3;
+    background: -moz-linear-gradient(-45deg, #fdf0dc 0%, #fdecd3 30%, #fdecd3 70%, #fde8ca 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fdf0dc), color-stop(30%, #fdecd3), color-stop(70%, #fdecd3), color-stop(100%, #fde8ca));
+    background: -webkit-linear-gradient(-45deg, #fdf0dc 0%, #fdecd3 30%, #fdecd3 70%, #fde8ca 100%);
+    background: -o-linear-gradient(-45deg, #fdf0dc 0%, #fdecd3 30%, #fdecd3 70%, #fde8ca 100%);
+    background: -ms-linear-gradient(-45deg, #fdf0dc 0%, #fdecd3 30%, #fdecd3 70%, #fde8ca 100%);
+    background: linear-gradient(135deg, #fdf0dc 0%, #fdecd3 30%, #fdecd3 70%, #fde8ca 100%)
+}
+
+.angle-gradient.pink {
+    background: #f3dee7;
+    background: -moz-linear-gradient(-45deg, #f5e5ec 0%, #f3dee7 30%, #f3dee7 70%, #f1d7e2 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #f5e5ec), color-stop(30%, #f3dee7), color-stop(70%, #f3dee7), color-stop(100%, #f1d7e2));
+    background: -webkit-linear-gradient(-45deg, #f5e5ec 0%, #f3dee7 30%, #f3dee7 70%, #f1d7e2 100%);
+    background: -o-linear-gradient(-45deg, #f5e5ec 0%, #f3dee7 30%, #f3dee7 70%, #f1d7e2 100%);
+    background: -ms-linear-gradient(-45deg, #f5e5ec 0%, #f3dee7 30%, #f3dee7 70%, #f1d7e2 100%);
+    background: linear-gradient(135deg, #f5e5ec 0%, #f3dee7 30%, #f3dee7 70%, #f1d7e2 100%)
+}
+
+.angle-gradient.pinkpurple {
+    background: #e8d9ea;
+    background: -moz-linear-gradient(-45deg, #ede1ee 0%, #e8d9ea 30%, #e8d9ea 70%, #e3d1e6 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ede1ee), color-stop(30%, #e8d9ea), color-stop(70%, #e8d9ea), color-stop(100%, #e3d1e6));
+    background: -webkit-linear-gradient(-45deg, #ede1ee 0%, #e8d9ea 30%, #e8d9ea 70%, #e3d1e6 100%);
+    background: -o-linear-gradient(-45deg, #ede1ee 0%, #e8d9ea 30%, #e8d9ea 70%, #e3d1e6 100%);
+    background: -ms-linear-gradient(-45deg, #ede1ee 0%, #e8d9ea 30%, #e8d9ea 70%, #e3d1e6 100%);
+    background: linear-gradient(135deg, #ede1ee 0%, #e8d9ea 30%, #e8d9ea 70%, #e3d1e6 100%)
+}
+
+.angle-gradient.purple {
+    background: #e0dced;
+    background: -moz-linear-gradient(-45deg, #e6e3f1 0%, #e0dced 30%, #e0dced 70%, #dad5e9 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #e6e3f1), color-stop(30%, #e0dced), color-stop(70%, #e0dced), color-stop(100%, #dad5e9));
+    background: -webkit-linear-gradient(-45deg, #e6e3f1 0%, #e0dced 30%, #e0dced 70%, #dad5e9 100%);
+    background: -o-linear-gradient(-45deg, #e6e3f1 0%, #e0dced 30%, #e0dced 70%, #dad5e9 100%);
+    background: -ms-linear-gradient(-45deg, #e6e3f1 0%, #e0dced 30%, #e0dced 70%, #dad5e9 100%);
+    background: linear-gradient(135deg, #e6e3f1 0%, #e0dced 30%, #e0dced 70%, #dad5e9 100%)
+}
+
+.angle-gradient.darkred {
+    background: #fbb9b3;
+    background: -moz-linear-gradient(-45deg, #fcc7c2 0%, #fbb9b3 30%, #fbb9b3 70%, #faaba4 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fcc7c2), color-stop(30%, #fbb9b3), color-stop(70%, #fbb9b3), color-stop(100%, #faaba4));
+    background: -webkit-linear-gradient(-45deg, #fcc7c2 0%, #fbb9b3 30%, #fbb9b3 70%, #faaba4 100%);
+    background: -o-linear-gradient(-45deg, #fcc7c2 0%, #fbb9b3 30%, #fbb9b3 70%, #faaba4 100%);
+    background: -ms-linear-gradient(-45deg, #fcc7c2 0%, #fbb9b3 30%, #fbb9b3 70%, #faaba4 100%);
+    background: linear-gradient(135deg, #fcc7c2 0%, #fbb9b3 30%, #fbb9b3 70%, #faaba4 100%)
+}
+
+.angle-gradient.lightred {
+    background: #f4d0cc;
+    background: -moz-linear-gradient(-45deg, #f6d9d6 0%, #f4d0cc 30%, #f4d0cc 70%, #f2c7c2 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #f6d9d6), color-stop(30%, #f4d0cc), color-stop(70%, #f4d0cc), color-stop(100%, #f2c7c2));
+    background: -webkit-linear-gradient(-45deg, #f6d9d6 0%, #f4d0cc 30%, #f4d0cc 70%, #f2c7c2 100%);
+    background: -o-linear-gradient(-45deg, #f6d9d6 0%, #f4d0cc 30%, #f4d0cc 70%, #f2c7c2 100%);
+    background: -ms-linear-gradient(-45deg, #f6d9d6 0%, #f4d0cc 30%, #f4d0cc 70%, #f2c7c2 100%);
+    background: linear-gradient(135deg, #f6d9d6 0%, #f4d0cc 30%, #f4d0cc 70%, #f2c7c2 100%)
+}
+
+.angle-gradient.turqoise {
+    background: #d8eff3;
+    background: -moz-linear-gradient(-45deg, #e0f2f5 0%, #d8eff3 30%, #d8eff3 70%, #d0ecf1 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #e0f2f5), color-stop(30%, #d8eff3), color-stop(70%, #d8eff3), color-stop(100%, #d0ecf1));
+    background: -webkit-linear-gradient(-45deg, #e0f2f5 0%, #d8eff3 30%, #d8eff3 70%, #d0ecf1 100%);
+    background: -o-linear-gradient(-45deg, #e0f2f5 0%, #d8eff3 30%, #d8eff3 70%, #d0ecf1 100%);
+    background: -ms-linear-gradient(-45deg, #e0f2f5 0%, #d8eff3 30%, #d8eff3 70%, #d0ecf1 100%);
+    background: linear-gradient(135deg, #e0f2f5 0%, #d8eff3 30%, #d8eff3 70%, #d0ecf1 100%)
+}
+
+.angle-gradient.blue {
+    background: #a9d1ee;
+    background: -moz-linear-gradient(-45deg, #badaf1 0%, #a9d1ee 30%, #a9d1ee 70%, #98c8eb 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #badaf1), color-stop(30%, #a9d1ee), color-stop(70%, #a9d1ee), color-stop(100%, #98c8eb));
+    background: -webkit-linear-gradient(-45deg, #badaf1 0%, #a9d1ee 30%, #a9d1ee 70%, #98c8eb 100%);
+    background: -o-linear-gradient(-45deg, #badaf1 0%, #a9d1ee 30%, #a9d1ee 70%, #98c8eb 100%);
+    background: -ms-linear-gradient(-45deg, #badaf1 0%, #a9d1ee 30%, #a9d1ee 70%, #98c8eb 100%);
+    background: linear-gradient(135deg, #badaf1 0%, #a9d1ee 30%, #a9d1ee 70%, #98c8eb 100%)
+}
+
+.angle-gradient.lightblue {
+    background: #bbdaf1;
+    background: -moz-linear-gradient(-45deg, #c9e1f4 0%, #bbdaf1 30%, #bbdaf1 70%, #add3ee 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #c9e1f4), color-stop(30%, #bbdaf1), color-stop(70%, #bbdaf1), color-stop(100%, #add3ee));
+    background: -webkit-linear-gradient(-45deg, #c9e1f4 0%, #bbdaf1 30%, #bbdaf1 70%, #add3ee 100%);
+    background: -o-linear-gradient(-45deg, #c9e1f4 0%, #bbdaf1 30%, #bbdaf1 70%, #add3ee 100%);
+    background: -ms-linear-gradient(-45deg, #c9e1f4 0%, #bbdaf1 30%, #bbdaf1 70%, #add3ee 100%);
+    background: linear-gradient(135deg, #c9e1f4 0%, #bbdaf1 30%, #bbdaf1 70%, #add3ee 100%)
+}
+
+.angle-gradient.white {
+    background: #fff
+}
+
+.angle-gradient.transparent {
+    background: transparent
+}
 /* =Buttons
 ----------------------------------------------- */
 .btn-default, .label-default {
@@ -203,8 +413,7 @@ textarea {
   transition: all 0.2s ease-in-out;  
 }
 .navbar-default.scrollDown{
-  background-color: #a09e9f;
-  opacity: 0.98;
+  background-color: rgba(160, 158, 159, 0.95);
   z-index: 50;
   border: 0;
 }
@@ -248,7 +457,7 @@ textarea {
   padding: 10px 0 10px 40px;
   margin-bottom: 10px;
   border: 0;
-  background-color: #000;
+  background-color: transparent;
   color: #FFF;
   border-radius: 0;
   outline: none;
@@ -587,7 +796,59 @@ textarea {
 #product-grid .quick-buy.mobile{
   display: none;
 }
-
+/* =Product Detail
+----------------------------------------------- */
+.swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+}
+.swiper-slide .product-img{
+  width: auto !important;
+  height: 100%;
+}
+.swiper .slider-thumbs{
+  position: absolute;
+  position: absolute;
+  z-index: 2;
+  bottom: 85px;
+  /*max-width: 250px;*/
+  left: 10px;  
+}
+.swiper .slider-thumbs ul{
+  list-style: none;
+}
+.swiper .slider-thumbs ul li{
+  display: inline-block;
+}
+/* =Contact
+----------------------------------------------- */
+.contact-wrapper{
+  height: 584px;
+  position: relative;
+}
+.contact-wrapper #google-map{
+  height: 100%;
+  z-index: -1;
+}
+.contact-wrapper .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(243, 133, 38, 0.2);
+}
+.contact-wrapper .contact-form{
+  padding: 10px;
+  background: rgba(255,255,255,0.8);
+}
+.contact-wrapper .contact-form h2{
+  color: #000;
+}
 /* =Responsive
 ----------------------------------------------- */
 /*Max-Width*/
@@ -605,7 +866,7 @@ textarea {
   }
   #navbar{
     margin-top: 0;
-    background-color: #FFF;
+    background-color: rgba(0, 0, 0, 0.9);
     border-bottom: 3px solid #000;
   }
   #navbar > div{
@@ -626,6 +887,7 @@ textarea {
     border: 0 !important;
     margin: 0 !important;
     padding: 10px 0 !important;
+    color: #ddd !important;
   }
   #navbar .search-mobile{
     display: block;
@@ -650,6 +912,12 @@ textarea {
   .navbar-toggle {
     margin-right: 15px;
   }
+  .slider .banner-text h2{
+    font-size: 6vh;
+  }
+  .slider .banner-text h3{
+    font-size: 3vh;
+  }  
 }
 @media (max-width: 649px) {
  

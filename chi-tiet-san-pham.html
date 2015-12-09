@@ -18,10 +18,9 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<link rel="stylesheet" href="css/owl.carousel.css">		
 
-    <!-- Slider -->
-    <script src="js/jquery.royalslider.min.js"></script>	
-    <link href="css/rs-minimal-white.css" rel="stylesheet">
-    <link href="css/royalslider.css" rel="stylesheet">
+    <!-- Product Slider -->
+  	<link rel="stylesheet" href="css/swiper.min.css">
+	<script defer src="js/jquery.swiper.min.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -99,91 +98,33 @@
 		</nav>
 	</div>
 	<div id="banner">
-		<div class="slider">
-			<div class="royalSlider heroSlider rsMinW" id="full-width-slider" style="width: 100%">
-			    <div class="rsContent">
-			        <img alt="" class="rsImg" src=
-			        "img/banner.jpg">
-			        <div class="wow flipInX banner-text">
-			        	<h2>Happy <br>Holiday!</h2>
-			        	<h3>GIVE HAPPINESS</h3>
-			        	<br>
-			        	<a href="#" class="shopnow dark"></a>
-			        </div>
-			    </div>
-			    <div class="rsContent">
-			        <img alt="" class="rsImg" src=
-			        "img/banner1.jpg">
-			    </div>
-			    <div class="rsContent">
-			        <img alt="" class="rsImg" src=
-			        "img/banner1.jpg">
-			    </div>
-			</div>
+		<div class="slider swiper">
+		    <!-- Swiper -->
+		    <div class="swiper-container gallery-top">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide angle-gradient pink">
+		            	<img class="product-img" src="img/product-01.png" alt="" />
+		            </div>
+		            <div class="swiper-slide angle-gradient blue">
+		            	<img class="product-img" src="img/product-02.png" alt="" />
+		            </div>		            
+		        </div>	        		        
+		    </div>
+		    <div class="slider-thumbs">
+          		<ul>
+                    <li onclick="productSwiper.slideTo(0);" class="angle-gradient pink">
+                        <img class="product-img" style="cursor:pointer" src="img/product-01.png" alt="" />
+                    </li>
+                    <li onclick="productSwiper.slideTo(1);" class="angle-gradient blue">
+                        <img class="product-img" style="cursor:pointer" src="img/product-02.png" alt="" />
+                    </li>                    
+				</ul>
+		    </div>
 		</div>
 	</div>
 	<div id="content">
 		<div class="container">
-			<div class="row">
-				<div class=" col-sm-4">
-					<img src="img/tat-nam.jpg" alt="">
-			        <div class="wow bounceIn cate-desc">
-			        	<h2>Tất nam</h2>
-			        	<br>
-			        	<a href="san-pham.html" class="shopnow white"></a>
-			        </div>					
-				</div>
-				<div class=" col-sm-4">
-					<img src="img/tat-nu.jpg" alt="">
-			        <div class="wow bounceIn cate-desc">
-			        	<h2>Tất nữ</h2>
-			        	<br>
-			        	<a href="san-pham.html" class="shopnow white"></a>
-			        </div>					
-				</div>
-				<div class=" col-sm-4">
-					<img src="img/tat-tre-em.jpg" alt="">
-			        <div class="wow bounceIn cate-desc">
-			        	<h2>Tất trẻ em</h2>
-			        	<br>
-			        	<a href="san-pham.html" class="shopnow white"></a>
-			        </div>					
-				</div>						
-
-				<div class="col-sm-8">
-					<img src="img/do-lot.jpg" alt="">
-			        <div class="wow bounceIn cate-desc">
-			        	<h2>Đồ lót</h2>
-			        	<br>
-			        	<a href="san-pham.html" class="shopnow white"></a>
-			        </div>					
-				</div>
-				<div class="col-sm-4">
-					<img src="img/khuyen-mai.jpg" alt="">
-			        <div class="wow bounceIn cate-desc">
-			        	<h2>Khuyến mãi</h2>
-			        	<br>
-			        	<a href="san-pham.html" class="shopnow white"></a>
-			        </div>					
-				</div>						
-
-				<div class="col-sm-6">
-					<img src="img/san-pham-moi.jpg" alt="">
-			        <div class="wow bounceIn cate-desc">
-			        	<h2>sản phẩm mới</h2>
-			        	<br>
-			        	<a href="san-pham.html" class="shopnow white"></a>
-			        </div>					
-				</div>
-				<div class="col-sm-6">
-					<img src="img/tui-xach-phu-kien.jpg" alt="">
-			        <div class="wow bounceIn cate-desc">
-			        	<h2>Túi xách phụ kiện</h2>
-			        	<br>
-			        	<a href="san-pham.html" class="shopnow white"></a>
-			        </div>					
-				</div>						
-			</div>				
+			
 		</div>
 	</div>
 	<div id="social-bar">
@@ -297,36 +238,20 @@
 		</div>
 	</div>
 	<script>
-      	function setRoyalSliderHeight()
+      	function setSliderHeight()
         {
             var height = parseInt(jQuery(window).height() - jQuery(window).height() / 3);
             console.log(height);
-            jQuery('#full-width-slider').css("height", height + "px");
+            jQuery('.swiper-container').css("height", height + "px");
         }
-        setRoyalSliderHeight();	
+        setSliderHeight();		
+        var productSwiper;
 		$(document).ready(function() {
-			$('#full-width-slider').royalSlider({
-				keyboardNavEnabled: true,
-				imageAlignCenter: true,
-				imageScaleMode: 'fill',
-				imageScalePadding: 0,
-				slidesSpacing: 0,
-				numImagesToPreload: 1,
-				transitionSpeed: 300,
-				navigateByClick: false,
-				sliderDrag: true,
-				transitionType: 'move',
-				loop: 'true',
-				controlNavigation: 'bullets',
-				controlsInside: false,
-				arrowsNav: false,
-				autoPlay: {
-				    // autoplay options go gere
-				    enabled: true,
-				    pauseOnHover: true,
-				    delay: 3000
-				}
-			});	    
+            productSwiper = new Swiper('.swiper-container', {
+                // simulateTouch: false,
+                loop:false
+            });
+            console.log(productSwiper);	
 		});
 	</script>	
 </body>
