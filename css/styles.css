@@ -16,9 +16,11 @@ body {
   line-height: 1.7;
   font-size: 14px;
   overflow-x: hidden;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #6B6B6B;
   text-decoration: none;
   -webkit-transition: all 0.2s;
@@ -389,8 +391,8 @@ textarea {
 /* =Buttons
 ----------------------------------------------- */
 .btn-default, .label-default {
-  background-color: #f38526;
-  border-color: #f2770e;
+  background-color: #CC3333;
+  border-color: #CC3323;
 }
 .btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
   background-color: #f2770e !important;
@@ -622,6 +624,15 @@ textarea {
 }
 #content .cate-item{
   position: relative;
+  overflow: hidden;
+}
+#content .cate-item img{
+  transform: translateZ(0px);
+  transition-duration: 500ms;
+  transition-property: transform;  
+}
+#content .cate-item:hover img{
+  transform: scale(1.2);
 }
 #content .cate-desc{
   position: absolute;
@@ -715,8 +726,14 @@ textarea {
 /*End info*/
 /* =Product Grid
 ----------------------------------------------- */
+.category #content{
+  background-color: #fbfbfb;
+}
 #product-grid .item:hover .image img{
   transform: scale(1.2);
+}
+#product-grid .item .panel{
+  background: transparent;
 }
 #product-grid .product-info{
   font-weight: bold;
