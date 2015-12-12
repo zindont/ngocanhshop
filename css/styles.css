@@ -636,19 +636,14 @@ textarea {
 }
 #content .cate-desc{
   position: absolute;
-  top: 30%;
+  top: 50%;
   width: 100%;
   text-align: center;
   margin: 0 -15px;
   padding: 0 15%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);  
-  
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;   
+  transform: translateY(-50%);   
 }
 #content .cate-desc h2{
   font-weight: bold;
@@ -1115,7 +1110,10 @@ textarea {
   }
   .swiper-slide{
     text-align: left;
-  }      
+  } 
+  #content .cate-desc h2{   
+    font-size: 40px;
+  }       
 }
 @media (min-width: 992px) {
   .buy-panel{
